@@ -5,6 +5,9 @@ description: >-
   A collection of my thoughts, experiments, and failures.
 theme: jekyll-theme-midnight
 
+url: "https://shuvraneelmitra.github.io"
+baseurl: "/Ramblings"
+
 show_excerpts: true
 
 paginate: 5
