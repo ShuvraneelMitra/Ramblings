@@ -1,7 +1,8 @@
 title: "Ramblings of a student failing at life"
 author: "Shuvraneel"
 email: mitrashuvraneel@gmail.com
-description: >- 
+description: >-
+  Thoughts, frustrations, and code snippets from a student still figuring things out.
 theme: jekyll-theme-midnight
 
 show_excerpts: true
@@ -18,8 +19,8 @@ collections:
 menu:
   - title: Home
     url: /
-  - title: Problem-Solving
-    url: /programming/
+  - title: Categories
+    url: /categories/
 
 paginate: 5
 paginate_path: /page:num/

@@ -1,0 +1,15 @@
+---
+layout: default
+title: All Posts by Category
+---
+
+<h1>All Posts by Category</h1>
+{% assign categories = site.posts | group_by_exp: "post", "post.categories.first" %}
+{% for category in categories %}
+  <h2 id="{{ category.name | downcase }}">{{ category.name | capitalize }}</h2>
+  <ul>
+    {% for post in category.items %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a> <small>({{ post.date | date: "%b %d, %Y" }})</small></li>
+    {% endfor %}
+  </ul>
+{% endfor %}

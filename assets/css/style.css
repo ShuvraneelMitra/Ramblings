@@ -1,0 +1,35 @@
+body {
+  background: #111;
+  color: #ddd;
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  background: #222;
+  padding: 1rem;
+}
+
+nav a {
+  color: #ff7efc;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  color: #ffb3ff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: #999;
+}
