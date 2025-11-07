@@ -6,17 +6,20 @@ title: Home
 <section class="intro">
   <h2>Hey, I'm {{ site.author }} 👋</h2>
   <p>Welcome to my little corner of chaos — where I ramble about code, music, and life.</p>
-  <a href="/all-blogs.html">→ Browse all posts</a>
+  <a href="{{ site.baseurl }}/all-blogs.html">→ Browse all posts</a>
 </section>
 
-{% assign categories = site.posts | map: "categories" | uniq %}
-{% for category in categories %}
-  {% assign cat_posts = site.categories[category] | slice: 0, 3 %}
+{% for category in site.categories %}
+  {% assign category_name = category[0] %}
+  {% assign posts = category[1] | slice: 0, 3 %}
   <section>
-    <h3><a href="/{{ category }}/">{{ category | capitalize }}</a></h3>
+    <h3><a href="{{ site.baseurl }}/{{ category_name }}/">{{ category_name | capitalize }}</a></h3>
     <ul>
-      {% for post in cat_posts %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a> — {{ post.date | date: "%b %d, %Y" }}</li>
+      {% for post in posts %}
+        <li>
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> —
+          {{ post.date | date: "%b %d, %Y" }}
+        </li>
       {% endfor %}
     </ul>
   </section>

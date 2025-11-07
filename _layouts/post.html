@@ -4,8 +4,14 @@ layout: default
 
 <article>
   <h1>{{ page.title }}</h1>
-  <p><small>Posted on {{ page.date | date: "%B %d, %Y" }} in 
-    <a href="/{{ page.categories[0] }}/">{{ page.categories[0] }}</a></small></p>
+  <p>
+    <small>
+      Posted on {{ page.date | date: "%B %d, %Y" }}
+      {% if page.categories and page.categories.size > 0 %}
+        in <a href="{{ site.baseurl }}/{{ page.categories[0] }}/">{{ page.categories[0] }}</a>
+      {% endif %}
+    </small>
+  </p>
   <div class="post-content">
     {{ content }}
   </div>
