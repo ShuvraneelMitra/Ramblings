@@ -1,0 +1,43 @@
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #111;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  text-align: center;
+  background: #222;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 10px;
+}
+
+a {
+  color: #f36;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}

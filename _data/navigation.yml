@@ -1,10 +1,10 @@
 - title: Home
   url: /
-- title: Category 1
-  url: /category-1/
-- title: Category 2
-  url: /category-2/
-- title: General
-  url: /general/
+- title: Programming
+  url: /programming/
+- title: Life
+  url: /life/
+- title: Music
+  url: /music/
 - title: All Blogs
-  url: /all-blogs/
+  url: /all-blogs.html

@@ -1,32 +1,23 @@
 ---
 layout: default
+title: Home
 ---
 
-<div class="home">
-  <h1 class="page-heading">Welcome!</h1>
-  <p class="intro-text">
-    This is where you'll write your introduction about yourself.
-    Talk about your background, what you do, and what visitors can expect from your blog.
-  </p>
+<section class="intro">
+  <h2>Hey, I'm {{ site.author }} 👋</h2>
+  <p>Welcome to my little corner of chaos — where I ramble about code, music, and life.</p>
+  <a href="/all-blogs.html">→ Browse all posts</a>
+</section>
 
-  {% for category in site.categories %}
-    <h2>{{ category | first }}</h2>
-    <ul class="post-list">
-      {% assign sorted_posts = site.posts | where: "category", category | sort: "date" | reverse %}
-      {% for post in sorted_posts limit:3 %}
-        <li>
-          <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-          </h3>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-        </li>
+{% assign categories = site.posts | map: "categories" | uniq %}
+{% for category in categories %}
+  {% assign cat_posts = site.categories[category] | slice: 0, 3 %}
+  <section>
+    <h3><a href="/{{ category }}/">{{ category | capitalize }}</a></h3>
+    <ul>
+      {% for post in cat_posts %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a> — {{ post.date | date: "%b %d, %Y" }}</li>
       {% endfor %}
-      {% if sorted_posts.size > 3 %}
-        <li><a href="/{{ category | first | slugify }}/">View all posts in {{ category | first }} &raquo;</a></li>
-      {% endif %}
     </ul>
-  {% endfor %}
-
-  <p class="all-blogs-link"><a href="{{ "/all-blogs/" | relative_url }}">View all blogs &raquo;</a></p>
-</div>
+  </section>
+{% endfor %}

@@ -1,27 +1,26 @@
-title: Your Name's Blog
-description: An introduction to your professional work, projects, and thoughts.
-author: Your Name
-email: your.email@example.com
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://your-github-username.github.io" # the base hostname & protocol for your site
-github_username: your-github-username
+title: "Ramblings of a Student Failing at Life"
+author: "Shuvraneel"
+email: "mitrashuvraneel@gmail.com"
+description: >-
+  A collection of my thoughts, experiments, and failures.
+theme: jekyll-theme-midnight
 
-# Build settings
+show_excerpts: true
+
+paginate: 5
+paginate_path: "/page:num/"
+
 markdown: kramdown
-theme: minima # You can choose another theme or customize with your own CSS
+highlighter: rouge
+
+github_username: ShuvraneelMitra
+linkedin_username: shuvraneelmitra
+
+collections:
+  posts:
+    output: true
+    permalink: /:categories/:title/
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-
-# Categories
-categories:
-  - name: "Category 1"
-    slug: "category-1"
-  - name: "Category 2"
-    slug: "category-2"
-  - name: "General"
-    slug: "general"
-
-# Pagination (optional, for future expansion)
-# paginate: 5
-# paginate_path: "/page:num/"

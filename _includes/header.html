@@ -1,7 +1,5 @@
 <header>
-  <div class="site-title">
-    <a href="/">{{ site.title }}</a>
-  </div>
+  <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
   <nav>
     <ul>
       {% for item in site.data.navigation %}

@@ -2,19 +2,10 @@
 layout: default
 ---
 
-<div class="category-page">
-  <h1 class="page-heading">Category: {{ page.category | capitalize }}</h1>
-  <ul class="post-list">
-    {% for post in site.posts %}
-      {% if post.category == page.category %}
-        <li>
-          <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-          </h3>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-        </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
-</div>
+<h2>{{ page.title }}</h2>
+<ul>
+  {% assign cat_posts = site.categories[page.category] %}
+  {% for post in cat_posts %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a> — {{ post.date | date: "%b %d, %Y" }}</li>
+  {% endfor %}
+</ul>
