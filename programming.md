@@ -5,7 +5,7 @@ permalink: /programming/
 ---
 
 <ul>
-  {% for post in site.posts %}
+  {% for post in site.categories["Problem-Solving"] %}
     <li>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       <span style="color:gray;">— {{ post.date | date: "%b %d, %Y" }}</span>
