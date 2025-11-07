@@ -10,3 +10,12 @@ highlighter: rouge
 
 github_username: ShuvraneelMitra
 linkedin_username: https://www.linkedin.com/in/shuvraneelmitra/
+
+minima:
+  nav:
+    - title: "Home"
+      url: /
+    - title: "Problems"
+      url: /problems/
+    - title: "About"
+      url: /about/
