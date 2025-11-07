@@ -1,0 +1,13 @@
+title: "Problem Solutions Blog"
+author: "Your Name"
+email: your@email.com
+description: >-
+  Notes, ideas, and detailed explanations of programming problems — written in Markdown.
+theme: minima
+show_excerpts: true
+
+markdown: kramdown
+highlighter: rouge
+
+github_username: ShuvraneelMitra
+linkedin_username: https://www.linkedin.com/in/shuvraneelmitra/
