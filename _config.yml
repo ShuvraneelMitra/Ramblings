@@ -2,7 +2,8 @@ title: "Ramblings of a student failing at life"
 author: "Shuvraneel"
 email: mitrashuvraneel@gmail.com
 description: >- 
-theme: jekyll-theme-chirpy
+remote_theme: cotes2020/jekyll-theme-chirpy
+
 show_excerpts: true
 
 plugins:
