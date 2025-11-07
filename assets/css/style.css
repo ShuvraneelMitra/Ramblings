@@ -120,6 +120,18 @@ a:hover {
   font-weight: 600;
 }
 
+mjx-container {
+  color: #ffb3ff;
+  font-size: 1.05em;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"] {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25em 0;
+}
+
 
 .highlight {
   background-color: #1e1e1e;
@@ -164,4 +176,3 @@ a:hover {
   color: #fff;
   font-weight: bold;
 }
-
