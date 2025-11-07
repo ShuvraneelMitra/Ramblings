@@ -3,7 +3,6 @@ layout: post
 title: "My First Blog Post"
 date: 2025-11-07
 categories: [Music]
-tags: [intro, thoughts]
 description: "My first blog on GitHub Pages!"
 ---
 
