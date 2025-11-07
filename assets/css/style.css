@@ -120,15 +120,48 @@ a:hover {
   font-weight: 600;
 }
 
-mjx-container {
-  color: #ffb3ff;
-  font-size: 1.05em;
-  margin: 1em 0;
+
+.highlight {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1.2rem 0;
+  overflow-x: auto;
 }
 
-mjx-container[jax="SVG"] {
-  overflow-x: auto;
-  overflow-y: hidden;
-  padding: 0.25em 0;
+.highlight pre {
+  margin: 0;
+  font-family: "Fira Code", monospace;
+  color: #ffb3ff;
+  font-size: 0.95rem;
+}
+
+/* Specific token colors (Rouge classes for C++) */
+.highlight .k,   /* keywords (int, if, return) */
+.highlight .kt { color: #ff66cc; font-weight: 600; }
+
+.highlight .n,   /* names, variables */
+.highlight .nv,
+.highlight .na { color: #d4d4d4; }
+
+.highlight .s,   /* strings */
+.highlight .s1,
+.highlight .s2 { color: #98c379; }
+
+.highlight .c,   /* comments */
+.highlight .cm,
+.highlight .c1 { color: #6a9955; font-style: italic; }
+
+.highlight .o { color: #d4d4d4; } /* operators */
+.highlight .m { color: #b5cea8; } /* numbers */
+
+.highlight .p { color: #ccc; } /* punctuation */
+
+.highlight .nf { color: #61afef; } /* function names */
+
+.highlight .err {
+  background-color: #ff5555;
+  color: #fff;
+  font-weight: bold;
 }
 
