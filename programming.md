@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Blogs about Nice Programming Problems"
+title: "Problem-Solving"
 permalink: /programming/
 ---
 
