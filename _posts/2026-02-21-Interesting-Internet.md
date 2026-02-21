@@ -28,4 +28,6 @@ description: "This is where your attention span comes in clutch"
 
 9. [QWOP](https://foddy.net/legacy/Athletics.html): Built by Bennett Foddy, a prolific game designer, this game is more difficult than gathering yourself to study for your college exams. Contact me if you can run the full 100 metres on a regular basis ;) He's made variations too, such as [CLOP](https://foddy.net/blog/2012/08/clop/) and [2QWOP](https://foddy.net/blog/2012/02/2qwop/).
 
+10. [Universal Paperclips](https://www.decisionproblem.com/paperclips/): You start off with one goal: to make as many paperclips as possible. Time goes by until that goal fades into distance, with Quantum Computing, Stock Market Investing, Strategy Modeling and Space Exploration taking center stage until ... all the matter in the universe is turned into paperclips and you are the only non-paperclip object in the universe. Do you have the gumption to sacrifice yourself for the greater good of having as many paperclips as possible?
+
 More remain to be added, contingent of my memory of my JEE days coming to my aid ... 
