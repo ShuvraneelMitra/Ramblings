@@ -28,6 +28,17 @@ description: "This is where your attention span comes in clutch"
 
 9. [QWOP](https://foddy.net/legacy/Athletics.html): Built by Bennett Foddy, a prolific game designer, this game is more difficult than gathering yourself to study for your college exams. Contact me if you can run the full 100 metres on a regular basis ;) He's made variations too, such as [CLOP](https://foddy.net/blog/2012/08/clop/) and [2QWOP](https://foddy.net/blog/2012/02/2qwop/).
 
-10. [Universal Paperclips](https://www.decisionproblem.com/paperclips/): You start off with one goal: to make as many paperclips as possible. Time goes by until that goal fades into distance, with Quantum Computing, Stock Market Investing, Strategy Modeling and Space Exploration taking center stage until ... all the matter in the universe is turned into paperclips and you are the only non-paperclip object in the universe. Do you have the gumption to sacrifice yourself for the greater good of having as many paperclips as possible?
+10. [Universal Paperclips](https://www.decisionproblem.com/paperclips/): You start off with one goal: to make as many paperclips as possible. Time goes by until that goal fades into distance, with Quantum Computing, Stock Market Investing, Strategy Modeling and Space Exploration taking center stage until ... all the matter in the universe is turned into paperclips and you are the only non-paperclip object in the universe. Do you have the gumption to sacrifice yourself for the 
+greater good of having as many paperclips as possible?
 
-More remain to be added, contingent of my memory of my JEE days coming to my aid ... 
+11. [Play Spent](https://playspent.org/): Appreciate all the riches that you have. 
+
+12. [One Day You Will Find Yourself ...](https://www.onedayyoullfindyourself.com/): Unsolicited advice is sometimes welcome, especially in times of boredom!
+
+13. [The Museum of Hoaxes](https://hoaxes.org/): Some hoaxes are purely for satirical value, while some have ulterior motives behind them. Click on to uncover a world of trickery!
+
+14. [Math](http://www.tanyakhovanova.com/coffins.html): One for the math nerds; this problem set has much historical value. Description of thd contents: simple solutions which are difficult to find.
+
+15. [MAN](https://www.youtube.com/watch?v=WfGMYdalClU): We are moving into the more poignant territory now. What happens when a species dominates the planet and carries out mass extermination of all the remaining species, which just want to survive in harmony with the natural laws? The [sequel](https://www.youtube.com/watch?v=p7LDk4D3Q3U) is no less awesome.
+
+16. [Literature Clock](https://literature-clock.jenevoldsen.com/): A very cool website for all book lovers; this website tells the time down to the minute with a quote from a book.
