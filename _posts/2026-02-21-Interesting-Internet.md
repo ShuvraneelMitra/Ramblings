@@ -44,3 +44,5 @@ greater good of having as many paperclips as possible?
 16. [There is No Game](https://poki.com/en/g/there-is-no-game): Why click on it when there is, in fact, no game? Let's move on to the next entry in the list...
 
 17. [Literature Clock](https://literature-clock.jenevoldsen.com/): A very cool website for all book lovers; this website tells the time down to the minute with a quote from a book.
+
+18. [TEXnique](https://texnique.xyz/): Competitive ranked TEXing is, apparently, a thing.
