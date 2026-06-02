@@ -46,3 +46,5 @@ greater good of having as many paperclips as possible?
 17. [Literature Clock](https://literature-clock.jenevoldsen.com/): A very cool website for all book lovers; this website tells the time down to the minute with a quote from a book.
 
 18. [TEXnique](https://texnique.xyz/): Competitive ranked TEXing is, apparently, a thing.
+
+19. [Wait But Why](https://waitbutwhy.com/) Been a lifesaver on multiple occasions.
