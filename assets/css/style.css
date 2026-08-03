@@ -215,7 +215,7 @@ section::before {
   display: block;
   width: 64px;
   height: 3px;
-  background: var(--accent);
+  color: var(--accent-soft);
   margin-bottom: 24px;
 }
 
