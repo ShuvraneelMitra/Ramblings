@@ -7,7 +7,7 @@ layout: default
   {% assign cat_posts = site.categories[page.category] %}
   {% for post in cat_posts %}
     <li>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> —
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a> —
       {{ post.date | date: "%b %d, %Y" }}
     </li>
   {% endfor %}

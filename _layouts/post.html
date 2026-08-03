@@ -8,7 +8,7 @@ layout: default
     <small>
       Posted on {{ page.date | date: "%B %d, %Y" }}
       {% if page.categories and page.categories.size > 0 %}
-        in <a href="{{ site.baseurl }}/{{ page.categories[0] }}/">{{ page.categories[0] }}</a>
+        in <a href="{{ '/' | append: page.categories[0] | append: '/' | relative_url }}">{{ page.categories[0] }}</a>
       {% endif %}
     </small>
   </p>
