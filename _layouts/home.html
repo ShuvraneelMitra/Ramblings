@@ -6,18 +6,18 @@ title: Home
 <section class="intro">
   <h2>Welcome to {{ site.author }}'s world</h2>
   <p>Hope you brought your attention span with you.</p>
-  <a href="{{ site.baseurl }}/all-blogs.html">→ Browse all posts</a>
+  <a href="{{ '/all-blogs/' | relative_url }}">Browse all posts</a>
 </section>
 
 {% for category in site.categories %}
   {% assign category_name = category[0] %}
   {% assign posts = category[1] | slice: 0, 3 %}
   <section>
-    <h3><a href="{{ site.baseurl }}/{{ category_name }}/">{{ category_name | capitalize }}</a></h3>
+    <h3><a href="{{ '/' | append: category_name | append: '/' | relative_url }}">{{ category_name | capitalize }}</a></h3>
     <ul>
       {% for post in posts %}
         <li>
-          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a> —
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a> —
           {{ post.date | date: "%b %d, %Y" }}
         </li>
       {% endfor %}
