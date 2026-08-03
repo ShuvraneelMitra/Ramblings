@@ -5,8 +5,8 @@ description: >-
   A collection of my thoughts, experiments, and failures.
 
 url: "https://shuvraneelmitra.github.io"
-# Project site (repo: Ramblings) — use baseurl "" only for a username.github.io user site repo.
-baseurl: "/Ramblings"
+# Project site (repo: bubblewrap) — use baseurl "" only for a username.github.io user site repo.
+baseurl: "/bubblewrap"
 
 permalink: /:categories/:title/
 
