@@ -5,7 +5,7 @@ description: >-
 
 
 url: "https://shuvraneelmitra.github.io"
-# Project site (repo: bubblewrap) — use baseurl "" only for a username.github.io user site repo.
+# Root site: GitHub repo must be named shuvraneelmitra.github.io (not bubblewrap).
 baseurl: ""
 
 permalink: /:categories/:title/
