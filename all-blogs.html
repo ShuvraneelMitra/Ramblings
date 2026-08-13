@@ -4,16 +4,32 @@ title: All Blogs
 permalink: /all-blogs/
 ---
 
-<h2>All Blog Posts</h2>
+<section class="archive-header">
+  <p class="eyebrow">Everything</p>
+  <h1>The archive</h1>
+  <p>Every post, organized by category. No algorithm, no feed — just the things worth keeping.</p>
+</section>
 
-{% for category in site.categories %}
-  <h3>{{ category[0] | capitalize }}</h3>
-  <ul>
-    {% for post in category[1] %}
-      <li>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a> — 
-        {{ post.date | date: "%b %d, %Y" }}
-      </li>
-    {% endfor %}
-  </ul>
+{% assign categories = site.categories | sort %}
+{% for category in categories %}
+  {% assign category_name = category[0] %}
+  {% assign category_posts = category[1] %}
+  <section class="archive-category" aria-labelledby="category-{{ forloop.index }}">
+    <div class="archive-category-heading">
+      <h2 id="category-{{ forloop.index }}"><a href="{{ '/' | append: category_name | append: '/' | relative_url }}">{{ category_name }}</a></h2>
+      <span>{{ category_posts.size }}</span>
+    </div>
+    <div class="post-list">
+      {% for post in category_posts %}
+        <article class="post-row">
+          <div class="post-row-date">{{ post.date | date: "%b %d, %Y" }}</div>
+          <div class="post-row-body">
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+          </div>
+          <a class="row-arrow" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title }}">↗</a>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
 {% endfor %}

@@ -2,17 +2,26 @@
 layout: default
 ---
 
-<article>
-  <h1>{{ page.title }}</h1>
-  <p>
-    <small>
-      Posted on {{ page.date | date: "%B %d, %Y" }}
-      {% if page.categories and page.categories.size > 0 %}
-        in <a href="{{ '/' | append: page.categories[0] | append: '/' | relative_url }}">{{ page.categories[0] }}</a>
-      {% endif %}
-    </small>
-  </p>
+<article class="post">
+  <header class="post-header">
+    {% if page.categories and page.categories.size > 0 %}
+      <a class="eyebrow category-label" href="{{ '/' | append: page.categories[0] | append: '/' | relative_url }}">{{ page.categories[0] }}</a>
+    {% endif %}
+    <h1>{{ page.title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      {% if page.description %}<span aria-hidden="true">·</span><span>{{ page.description }}</span>{% endif %}
+    </div>
+  </header>
+
   <div class="post-content">
     {{ content }}
   </div>
+
+  <footer class="post-footer">
+    {% if page.categories and page.categories.size > 0 %}
+      <a class="back-link" href="{{ '/' | append: page.categories[0] | append: '/' | relative_url }}">← More in {{ page.categories[0] }}</a>
+    {% endif %}
+    <a class="back-link" href="{{ '/all-blogs/' | relative_url }}">All posts →</a>
+  </footer>
 </article>

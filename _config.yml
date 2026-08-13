@@ -1,19 +1,11 @@
 title: "bubblewrap"
 author: "insipidintegrator"
 email: "mitrashuvraneel@gmail.com"
-description: >-
-
-
+description: "Notes on programming, music, ideas, and interesting corners of the internet."
 url: "https://shuvraneelmitra.github.io"
-# Root site: GitHub repo must be named shuvraneelmitra.github.io (not bubblewrap).
 baseurl: ""
 
 permalink: /:categories/:title/
-
-show_excerpts: true
-
-paginate: 5
-paginate_path: "/page:num/"
 
 markdown: kramdown
 highlighter: rouge
@@ -21,10 +13,20 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
+show_excerpts: true
 
+# GitHub profile metadata used by the theme/footer.
 github_username: ShuvraneelMitra
 linkedin_username: shuvraneelmitra
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/

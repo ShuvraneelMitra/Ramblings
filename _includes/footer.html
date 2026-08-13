@@ -1,3 +1,10 @@
-<footer>
-  <p>© {{ site.time | date: '%Y' }} {{ site.author }} — Built with ❤️ using Jekyll</p>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>© {{ site.time | date: '%Y' }} {{ site.author }}</p>
+    <div class="footer-links">
+      {% if site.github_username %}<a href="https://github.com/{{ site.github_username }}">GitHub</a>{% endif %}
+      {% if site.linkedin_username %}<a href="https://www.linkedin.com/in/{{ site.linkedin_username }}/">LinkedIn</a>{% endif %}
+      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+    </div>
+  </div>
 </footer>

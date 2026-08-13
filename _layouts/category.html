@@ -2,13 +2,23 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
-<ul>
+<section class="archive-header">
+  <p class="eyebrow">Category</p>
+  <h1>{{ page.title }}</h1>
+  {% assign category_posts = site.categories[page.category] %}
+  <p>{{ category_posts.size }} {% if category_posts.size == 1 %}post{% else %}posts{% endif %} in this corner of the archive.</p>
+</section>
+
+<section class="post-list archive-list" aria-label="{{ page.title }} posts">
   {% assign cat_posts = site.categories[page.category] %}
   {% for post in cat_posts %}
-    <li>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a> —
-      {{ post.date | date: "%b %d, %Y" }}
-    </li>
+    <article class="post-row">
+      <div class="post-row-date">{{ post.date | date: "%b %d, %Y" }}</div>
+      <div class="post-row-body">
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        {% if post.description %}<p>{{ post.description }}</p>{% endif %}
+      </div>
+      <a class="row-arrow" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title }}">↗</a>
+    </article>
   {% endfor %}
-</ul>
+</section>
