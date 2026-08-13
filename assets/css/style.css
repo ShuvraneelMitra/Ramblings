@@ -159,7 +159,7 @@ a:focus-visible {
 
 .hero h1 {
   max-width: 900px;
-  font-size: clamp(4rem, 10vw, 8.2rem);
+  font-size: clamp(4rem, 4vw, 4rem);
 }
 
 .hero h1 em {
