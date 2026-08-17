@@ -6,8 +6,6 @@ categories: [Programming]
 description: "Debunking misconceptions about decorators and presenting them in a simple-to-understand, lucid manner"
 ---
 
-# Demystifying Decorators: What are they and why do you need them?
-
 ![](https://miro.medium.com/v2/resize:fit:875/1*bLVASuOHihpXDKLo0n9NfA.png)
 
 While starting out with more advanced topics in Python, one frequently encounters a formidable beast called ‘Decorators’. While students usually learn the syntax and how to use the ‘@’ symbol above function definitions before moving on, decorators are much more fundamental to software design than they seem at first.
