@@ -11,16 +11,16 @@ description: "An interesting question that led to another one"
 
 This is the easier version of the problem, since all the elements are guaranteed to be distinct. To go from $\pi_1$ to $\pi_2$, the $i$-th element of $\pi_1$ needs to go from its position $i$ in $\pi_1$ to a new position $j_i$ in $\pi_2$. It somewhat looks like this:
 
-<p align="center">
-  <img src="https://i.imgur.com/QLOCBfU.png" alt="Centered Image" width=60%>
-</p>
+<figure align="center">
+  <img src="https://i.imgur.com/QLOCBfU.png" alt="Centered Image">
+</figure>
 
 
 This looks somewhat like a graph! When we untangle this gnarly mess and straighten out the curves, this is what we get:
 
-<p align="center">
-  <img src="https://i.imgur.com/cDHsJ8q.png" alt="Centered Image" width=60%>
-</p>
+<figure align="center">
+  <img src="https://i.imgur.com/cDHsJ8q.png" alt="Centered Image">
+</figure>
 
 This graph is special: each node has exactly one outdegree and one indegree. We note that such a graph will be composed entirely of loops, considering also singleton nodes with self-loops, if any.
 
